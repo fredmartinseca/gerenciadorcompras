@@ -1,18 +1,25 @@
 package br.com.faez.gerenciadorcompras.servlet;
 
 import java.io.IOException;
-
-import javax.servlet.ServletException;
+import java.io.PrintWriter;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class TestServlet extends HttpServlet{
-	
+@WebServlet(urlPatterns="/oi")
+public class TestServlet extends HttpServlet {
+
 	@Override
-	protected void service(HttpServletRequest arg0, HttpServletResponse arg1) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		super.service(arg0, arg1);
+	protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+		PrintWriter out = resp.getWriter();
+		out.println("<html>");
+		out.println("<body>");
+		out.println("<h1>");
+		out.println("Testes servlets");
+		out.println("</h1>");
+		out.println("</body>");
+		out.println("</html>");
 	}
 
 }
