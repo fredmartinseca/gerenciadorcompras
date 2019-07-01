@@ -30,7 +30,7 @@ public class Usuario implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Usuario [id=" + id + ", nome=" + nome + ", email=" + email + ", login=" + login + ", senha=" + senha
+		return "Usuario [id=" + id + ", nome=" + nome + ", email=" + email + ", cadastroUsuario=" + login + ", senha=" + senha
 				+ ", cpf=" + cpf + "]";
 	}
 

@@ -14,6 +14,7 @@ public class TestServlet extends HttpServlet {
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		PrintWriter out = resp.getWriter();
 		out.println("<html>");
+		out.println("<head><title>Teste Servlets</title></head>");
 		out.println("<body>");
 		out.println("<h1>");
 		out.println("Testes servlets");
